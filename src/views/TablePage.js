@@ -17,30 +17,30 @@ const TablePage = () => {
     if (grid && (args.requestType === 'beginEdit' || args.requestType === 'add')) {
       console.log(grid)
       const cols = grid.current.columns;
-      for (const col of cols) {
-        console.log(col);
-        if (col.field === "CustomerID") {
-          col.visible = true;
-        }
-        else if (col.field === "ShipCountry") {
-          col.visible = false;
-        }
-      }
+      // for (const col of cols) {
+      //   console.log(col);
+      //   if (col.field === "CustomerID") {
+      //     col.visible = true;
+      //   }
+      //   else if (col.field === "ShipCountry") {
+      //     col.visible = false;
+      //   }
+      // }
     }
   }
   const actionComplete = (args) => {
     console.log(args)
     if (grid && args.requestType === 'save') {
       console.log(grid)
-      const cols = grid.current.columns;
-      for (const col of cols) {
-        if (col.field === "CustomerID") {
-          col.visible = false;
-        }
-        else if (col.field === "ShipCountry") {
-          col.visible = true;
-        }
-      }
+      // const cols = grid.current.columns;
+      // for (const col of cols) {
+      //   if (col.field === "CustomerID") {
+      //     col.visible = false;
+      //   }
+      //   else if (col.field === "ShipCountry") {
+      //     col.visible = true;
+      //   }
+      // }
     }
   }
 
