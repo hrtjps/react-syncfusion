@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  transition: all ease .5s;
+  box-shadow: none;
+
+  a {
+    text-decoration: none;
+    font-family: "Colfax Regular";
+    color: white;
+    letter-spacing: -0.3px;
+    text-align: center;
+    margin-right: 25px;
+    padding: 10px;
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
+  }  
+  .logo a {
+    padding: 0
+  }
+
+}
+
+.active-link {
+  font-family: "Colfax Bold" !important;
+  color: var(--fevo-blue) !important;
+}
+
+
+.dropdown-item{
+  border-bottom: solid 1px #979797;
+  &:last-child {
+    border-bottom: none;
+  }
+}
