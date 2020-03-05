@@ -64,11 +64,11 @@ const Layout = ({container}) => {
       <Divider />
       <List>
         <ListItem button onClick={($event)=>moveRoute('/scheduler', $event)}>
-          <ListItemIcon> <ScheduleIcon /></ListItemIcon>
+          <ListItemIcon><ScheduleIcon /></ListItemIcon>
           <ListItemText primary={"Scheduler"} />
         </ListItem>
         <ListItem button onClick={($event)=>moveRoute('/table', $event)}>
-          <ListItemIcon> <ListAltIcon /></ListItemIcon>
+          <ListItemIcon><ListAltIcon /></ListItemIcon>
           <ListItemText primary={"Table"} />
         </ListItem>
       </List>
