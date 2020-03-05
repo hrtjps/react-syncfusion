@@ -18,6 +18,7 @@ const TablePage = () => {
       console.log(grid)
       const cols = grid.current.columns;
       for (const col of cols) {
+        console.log(col);
         if (col.field === "CustomerID") {
           col.visible = true;
         }
@@ -53,9 +54,9 @@ const TablePage = () => {
           ref={grid}
           >
           <ColumnsDirective>
-              <ColumnDirective field='EmployeeID' width='100'/>
+              <ColumnDirective field='EmployeeID' width='100' isPrimaryKey={true}/>
               <ColumnDirective field='OrderID' width='100' />
-              <ColumnDirective field='CustomerID' width='100'/>
+              <ColumnDirective field='CustomerID' width='100' />
               <ColumnDirective field='Freight' width='100' format="C2"/>
               <ColumnDirective field='ShipCountry' width='100'/>
           </ColumnsDirective>
